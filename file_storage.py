@@ -24,4 +24,4 @@ class FileStorage:
     def _ensure_dir(cls, reciever: str):
         dir = cls.STORAGE / reciever
         if not dir.exists():
-            dir.mkdir()
+            dir.mkdir(parents=True)
